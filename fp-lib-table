@@ -1,0 +1,8 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "DIN")(type "KiCad")(uri "${KIPRJMOD}/DIN.pretty")(options "")(descr ""))
+  (lib (name "Pro_Micro")(type "KiCad")(uri "${KIPRJMOD}/Pro_Micro.pretty")(options "")(descr ""))
+  (lib (name "privat")(type "KiCad")(uri "/Users/pdaehne/src/privat.pretty")(options "")(descr ""))
+  (lib (name "Hackup_Commodore")(type "KiCad")(uri "/Users/pdaehne/src/privat/HackupNet-KiCad-Libraries/Hackup_Commodore.pretty")(options "")(descr ""))
+  (lib (name "Commodore")(type "KiCad")(uri "${KIPRJMOD}/Commodore.pretty")(options "")(descr ""))
+)

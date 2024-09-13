@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Pro_Micro")(type "KiCad")(uri "${KIPRJMOD}/Pro_Micro.kicad_sym")(options "")(descr ""))
+  (lib (name "Commodore")(type "KiCad")(uri "${KIPRJMOD}/Commodore.kicad_sym")(options "")(descr ""))
+  (lib (name "DIN")(type "KiCad")(uri "${KIPRJMOD}/DIN.kicad_sym")(options "")(descr ""))
+)
