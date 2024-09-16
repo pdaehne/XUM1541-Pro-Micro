@@ -114,36 +114,36 @@ The first step is to solder the two 1x12 pin headers to the Pro Micro board.
 I recommend to use a breadboard to make sure that the pin headers are correctly
 aligned. But be careful not to drop solder onto the breadboard!
 
-[![Soldering the pin headers to the Pro Micro](images/Pro_Micro_Pinheaders.preview.jpg)](images/Pro_Micro_Pinheaders.jpg?raw=1)
+[![Soldering the Pin Headers to the Pro Micro](images/Pro_Micro_Pinheaders.preview.jpg)](images/Pro_Micro_Pinheaders.jpg?raw=1)
 
-### Soldering the Socket for U1 (74LS06) and the Resistor Networks RN2 and RN1
+### Soldering the Socket for U1 (74LS06), the Capacitor C1 and the Resistor Networks RN2 and RN1
 
 There are three options for building the XUM1541:
 
-1. The simple version without U1, RN2 and RN1. I generally do not recommend this
-   option. You should only connect one single device to the IEC bus when using
-   this option. You have to close the five solder jumpers below the U1 footprint
-   on the bottom of the PCB, and that is all.
+1. The simple version without U1, C1, RN2 and RN1. I generally do not recommend
+   this option. You should only connect one single device to the IEC bus when
+   using this option. You have to close the five solder jumpers below the U1
+   footprint on the bottom of the PCB, and that is all.
 
    [![Jumpers when not installing U1](images/Jumpers_U1.preview.jpg)](images/Jumpers_U1.jpg?raw=1)
 
-2. The version with U1 and RN2, but without RN1. The 74LS06 on U1 is a buffer
-   chip, i.e. it is used to amplify the signals of the Pro Micro and to protect
-   the ports of the Pro Micro. It is strongly recommended to install U1 when
-   you plan to connect more than one device to the IEC bus. RN2 are pull-down
-   resistors to force the inputs of U1 to GND level when not driven by the
-   Pro Micro.
+2. The version with U1, C1 and RN2, but without RN1. The 74LS06 on U1 is a
+   buffer chip, i.e. it is used to amplify the signals of the Pro Micro and to
+   protect the ports of the Pro Micro. It is strongly recommended to install U1
+   when you plan to connect more than one device to the IEC bus. RN2 are
+   pull-down resistors to force the inputs of U1 to GND level when not driven by
+   the Pro Micro.
 
    You can either install a DIL-14 socket for U1, or you can directly solder the
    74LS06 IC to the XUM1541 PCB. I personally prefer to use sockets. Make sure
    that the little notch of the socket points to the direction marked on the
    silk screen (to the right on the photo below).
 
-   [![Soldering the socket for U1](images/Socket_U1.preview.jpg)](images/Socket_U1.jpg?raw=1)
+   [![Soldering the Socket for U1](images/Socket_U1.preview.jpg)](images/Socket_U1.jpg?raw=1)
 
    I recommend to wait until you are finished with soldering before you install
-   the 74LS06 into the socket. Again make sure that the notch of the IC point to
-   the direction of the notch of the socket (to the right on the photo).
+   the 74LS06 into the socket. Again make sure that the notch of the IC points
+   to the direction of the notch of the socket (to the right on the photo).
 
    Now you have to install the blocking capacitor C1 next to U1.
 
@@ -162,17 +162,17 @@ There are three options for building the XUM1541:
 
    [![Jumpers when not installing RN1](images/Jumpers_RN1.preview.jpg)](images/Jumpers_RN1.jpg?raw=1)
 
-3. The full version with U1, RN2 and RN1. This is the recommended version. RN1
-   limits the current between the IEC bus and the Pro Micro and protects the
+3. The full version with U1, C1, RN2 and RN1. This is the recommended version.
+   RN1 limits the current between the IEC bus and the Pro Micro and protects the
    ports of the Pro Micro as well as your valuable retro devices connected to
    the IEC bus. The electric circuit is exactly the same as used for the
    [ZoomFloppy](https://www.go4retro.com/products/zoomfloppy/) available for
    purchase from Retro Innovations.
 
-   Additionally to installing U1 and RN2 (see documentation for variant 2
+   Additionally to installing U1, C1 and RN2 (see documentation for variant 2
    above), you have to install resistor network RN1. Unlike resistor network
    RN2, the orientation of the network does not matter, but it is nevertheless
-   good practice to solder pin 1 with the dot into the while marked on the silk
+   good practice to solder pin 1 with the dot into the hole marked on the silk
    screen (at the top in the picture below).
 
    [![Soldering the Resistor Network RN1](images/Resistor_Network_RN1.preview.jpg)](images/Resistor_Network_RN1.jpg?raw=1)
@@ -194,15 +194,15 @@ To solder the pin sockets straight, I recommend to stick them onto the pin
 headers of the Pro Micro and put them onto the PCB. But again, be careful not
 to drop solder onto the Pro Micro!
 
-[![Soldering the pin sockets to the PCB](images/Pin_Sockets_ProMicro_Bottom.preview.jpg)](images/Pin_Sockets_ProMicro_Bottom.jpg?raw=1)
-[![Soldering the pin sockets to the PCB](images/Pin_Sockets_ProMicro_Top.preview.jpg)](images/Pin_Sockets_ProMicro_Top.jpg?raw=1)
+[![Soldering the Pin Sockets to the PCB](images/Pin_Sockets_ProMicro_Bottom.preview.jpg)](images/Pin_Sockets_ProMicro_Bottom.jpg?raw=1)
+[![Soldering the Pin Sockets to the PCB](images/Pin_Sockets_ProMicro_Top.preview.jpg)](images/Pin_Sockets_ProMicro_Top.jpg?raw=1)
 
 ### Soldering the 6 Pin DIN socket
 
 Now solder the 6 pin DIN socket onto the XUM1541 PCB. This is a straightforward
 task.
 
-[![Soldering the pin sockets to the PCB](images/DIN6_Socket.preview.jpg)](images/DIN6_Socket.jpg?raw=1)
+[![Soldering the 6 Pin DIN Socket to the PCB](images/DIN6_Socket.preview.jpg)](images/DIN6_Socket.jpg?raw=1)
 
 ### Soldering the Debug Header
 
@@ -224,14 +224,21 @@ determine the right resistor values.
 
 Important: The activity LED requires U1 to be installed!
 
-[![Soldering the LEDs](images/Series_Resistors_R1_R2.preview.jpg)](images/Series_Resistors_R1_R2.jpg?raw=1)
+When soldering the LEDs, keep in mind that the orientation of the LED matters.
+There is a side of the LEDs that is flattened. This side is also marked on the
+silk screen (the side facing away from the resistors). Unfortunately, this might
+be little bit hard to see. Another hint is the length of the LED leads - the
+long lead is the anode (+) and goes to the resistors, the short lead is the
+cathode (-) and must point away from the resistors.
+
+[![Soldering the Series Resistors](images/Series_Resistors_R1_R2.preview.jpg)](images/Series_Resistors_R1_R2.jpg?raw=1)
 [![Soldering the LEDs](images/LEDs_D1_D2.preview.jpg)](images/LEDs_D1_D2.jpg?raw=1)
 
 ### Soldering the Reset Button
 
 The reset button SW1 is optional. Pressing the reset button switches the Pro
 Micro into boot loader mode for 8 seconds. Having a dedicated reset switch makes
-installing new firmware on the ATmega32U4 a much simpler.
+installing a new firmware on the ATmega32U4 much simpler.
 
 [![Soldering the Reset Button SW1](images/Reset_Button_SW1.preview.jpg)](images/Reset_Button_SW1.jpg?raw=1)
 
@@ -254,14 +261,14 @@ port. The Pro Micro usually comes with the Arduino Leonard boot loader
 pre-installed. You switch the Pro Micro into boot loader mode by pressing the
 reset button. When you did not install the reset button, you have to short the
 RST pin of the Pro Micro board to GND. The Pro Micro stays in boot loader mode
-only for 8 seconds, so you have to be quick now! I used a software called
+for only 8 seconds, so you have to be quick now! I used a software called
 "[avrdude](https://github.com/avrdudes/avrdude)" to install the firmware.
 avrdude is also used by the Arduino IDE, so a simple way to get avrdude is to
 install the Arduino IDE. I used the following command line to install the
 firmware:
 
 ```
-avrdude "-C../etc/avrdude.conf" -v -patmega32u4 -cavr109 "-P/dev/tty.usbmodem2101" -b57600 -D "-Uflash:w:xum1541-PROMICRO_7406-v08.hex:i"
+avrdude -v -patmega32u4 -cavr109 "-P/dev/tty.usbmodem2101" -b57600 -D "-Uflash:w:xum1541-PROMICRO_7406-v08.hex:i"
 ```
 
 Of course you have to adjust the command line, especially the serial port!
