@@ -43,7 +43,7 @@ durable than the default HASL finish.
   These are used to connect the Pro Micro Board to the XUM1541 PCB. They are
   optional, you can solder the Pro Micro directly to the PCB instead.
 
-* __1x 6 Pin DIN socket Right Angle PCB mount__.
+* __1x 6 Pin DIN Socket Right Angle PCB mount__.
 
   The footprint is for Lumberg 010599 06 or equivalent sockets.
 
@@ -51,7 +51,7 @@ durable than the default HASL finish.
 
   Using this buffer chip is strongly recommended, especially when your're
   daisychaining more than one device on the IEC bus, but it is optional. When
-  you install it, you should also install the capacitor C1 and the register
+  you install it, you should also install the capacitor C1 and the resistor
   network RN2. When you do not install it, you have to close the corresponding
   5 solder jumpers on the bottom of the XUM1541 PCB.
 
@@ -257,7 +257,7 @@ Make sure that you fetch the correct firmware:
 
 There are many different ways to install the firmware. You can use an Atmel ICSP
 programmer (or another Arduino), or you can install the firmware via the USB
-port. The Pro Micro usually comes with the Arduino Leonard boot loader
+port. The Pro Micro usually comes with the Arduino Leonardo boot loader
 pre-installed. You switch the Pro Micro into boot loader mode by pressing the
 reset button. When you did not install the reset button, you have to short the
 RST pin of the Pro Micro board to GND. The Pro Micro stays in boot loader mode
