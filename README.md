@@ -8,6 +8,18 @@ bus) to modern computers via USB. You usually use it to create images of old
 1541 or 1571 floppy disks by using a software called
 [OpenCBM](https://github.com/OpenCBM/OpenCBM).
 
+## Acknowlegements
+
+This device is a clone of the
+[ZoomFloppy](https://www.go4retro.com/products/zoomfloppy/) device developed by
+Nate Lawson. It does not have the IEEE-488 interface, but apart from that it has
+the same circuit as documented in the file
+[zoomfloppy-schem-20100704.png](https://github.com/OpenCBM/OpenCBM/blob/master/xum1541/zoomfloppy-schem-20100704.png)
+in the OpenCBM repository.
+
+The idea for the "Activity" LED was taken from the
+[XUM1541-II](https://github.com/tebl/C64-XUM1541-II) device designed by tebl.
+
 ## Ordering the PCB
 
 The subdirectory "gerber-files" contains a Zip file you can use to order the PCB
