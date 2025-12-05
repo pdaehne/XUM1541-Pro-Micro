@@ -70,7 +70,11 @@ durable than the default HASL finish.
   This resistor network is only needed when installing the 74LS06. It pulls the
   inputs of the 74LS06 to ground.
 
-* (Optional) __1x Resistor Network 5x4.7kOhm SIL-10 Single Resistors__.
+  Warning: Please make sure that you get the right kind of resistor network.
+  This network consists of 5 resistors which share one common connection on one
+  side, i.e. there are 5 + 1 = 6 pins.
+
+* (Optional) __1x Resistor Network 5x4.7kOhm SIL-10 Single Resistors__ (RN1).
 
   This resistor network is not used when you do not install the 74LS06.
   
@@ -78,6 +82,10 @@ durable than the default HASL finish.
   network to limit the amount of current on the IEC bus. When you install the
   74LS06 and decide to leave this resistor network unpopulated, you have to
   close the corresponding 5 solder jumpers on the bottom of the XUM1541 PCB.
+
+  Warning: Please make sure that you get the right kind of resistor network.
+  This network consists of 5 resistors which all have their own separate two
+  connections, i.e. there are 5 x 2 = 10 pins.
 
 * (Optional) __1x Push Button 6x6mm__ (SW1).
 
