@@ -299,6 +299,17 @@ For installing OpenCBM, I recommend to have a look into the official
 "[OpenCBM Users Guide](https://opencbm.trikaliotis.net/)" for more
 information.
 
+## Using a Parallel Cable
+
+[![Using a Parallel Cable](images/Parallel_Cable.preview.jpg)](images/Parallel_Cable.jpg?raw=1)
+
+When you have a 1541 with a parallel cable, you can use that cable to achieve
+much higher transfer rates. Simply connect the userport connector that you
+usually connect to your C64 to the "Userport" at the side of the XUM1541. You
+do not need to install any special kernal in your floppy - OpenCBM automatically
+detects the presence of the cable and installs all necessary software on the
+floppy. It should work out of the box.
+
 ## License
 
 XUM1541 Pro Micro (c) by Patrick Dähne
