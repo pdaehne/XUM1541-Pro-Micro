@@ -310,6 +310,11 @@ do not need to install any special kernal in your floppy - OpenCBM automatically
 detects the presence of the cable and installs all necessary software on the
 floppy. It should work out of the box.
 
+When do not yet have a parallel cable, you might be interested in the following
+of my projects:
+
+https://github.com/pdaehne/C64-Parallel-Floppy-Cable
+
 ## License
 
 XUM1541 Pro Micro (c) by Patrick Dähne
